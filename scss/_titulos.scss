@@ -1,0 +1,14 @@
+.titulo {
+    color: $color-primario;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+  .subtituloMenu {
+    color: $color-primario;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }

@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  @import "variables";
+  @import "titulos";
+
+  header {
+    /*background-color: #754c24;*/
+    height: fit-content;
+    grid-area: header;
+  }
+  
+  .logoEmpresa {
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* NAVEGACIÓN */
+  
+  .inicioIndex, .inicioDesayunos, .inicioComida, .iniciomenudia, .inicioOrden, .inicioPendulo, .inicioFooter {
+    color: #f39200;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #683c11;
+    width: 10px;
+    height: 10%;
+    padding: 10px;
+    margin: 10px 10px 1;
+    border-radius: 10px;
+  
+    &:hover {
+      background-color: #662612;
+    }
+  }
+  
+  .nosotros {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f39200;
+    text-align: center;
+  }
+  
+  /* BOX MODELLING */
+  
+  .contenedorNosotros {
+    background-color: #fcbe6b;
+    background: linear-gradient(#fcbe6b, #fcb36b);
+    padding: 20px;
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #683c11;
+    border-radius: 10px;
+    grid-area: nosotros;
+  }
+  
+  .slide {
+    width: 580px;
+    height: 248px;
+  }
+  
+  /* FIXED */
+  
+  .cajaUno {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #5bbdb3;
+    background: linear-gradient(#5bbdb3, #5bbd9b);
+    width: 150px;
+    height: 100px;
+    padding: 20px 20px 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #683c11;
+    border-radius: 0px 0px 10px 10px;
+  
+    &:hover {
+      background: linear-gradient(#5bbdff, #5b83ff);
+    }
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f39200;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #683c11;
+    font-size: smaller;
+    text-align: center;
+    padding: 10px;
+    grid-area: footer;
+  }
+  
+  body {
+    background-image: url("../img/fondo.jpg");
+  }
+  
+  /* ESTILO DESAYUNOS */
+  
+  .inicioIndex {
+    color: #f39200;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* ESTILO ORDEN LLEVAR */
+  
+  .contenedorContacto {
+    background-color: #fcbe6b;
+    padding: 20px;
+    margin: 50px;
+    width: 600px;
+    height: 320px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #683c11;
+    border-radius: 10px;
+  }
+  
+  .zonaMexico {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f39200;
+    text-align: center;
+  }
+  
+  /* ESTILO MENÚ DEL DÍA */
+  
+  .menuSeccion {
+    color: #f39200;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+  .contenedorMenuLunes {
+    background-color: #79211c;
+    background: linear-gradient(#79211c, #6a211c);
+    padding: 20px;
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #f39200;
+    border-radius: 10px;
+    grid-area: lunes;
+  }
+  
+  .promocionMes {
+    grid-area: promoLunes;
+  }
+  
+  /* MEDIA QUERIES INDEX */
+  
+  /*  VERSIÓN TABLETA */
+  
+  @media (min-width: 768px) {
+    .gridPadre {
+      display: grid;
+      grid-template-areas: "header" "nosotros" "footer";
+    }
+  }
+  
+  /*  VERSIÓN ESCRITORIO */
+  
+  @media (min-width: 1024px) {
+    .gridPadre {
+      display: grid;
+      grid-template-areas: "header" "nosotros" "footer";
+    }
+  }
+  
+  /* MEDIA QUERIES INDEX */
+  
+  /*  VERSIÓN TABLETA */
+  
+  @media (min-width: 768px) {
+    .padreDia {
+      display: grid;
+      grid-template-areas: "header" "lunes" "footer";
+    }
+  }
+  
+  /*  VERSIÓN ESCRITORIO */
+  
+  @media (min-width: 1024px) {
+    .gridPadre {
+      display: grid;
+      grid-template-areas: "header" "lunes" "footer";
+    }
+  }
