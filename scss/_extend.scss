@@ -1,0 +1,12 @@
+/* EXTEND POR SI DESEO CAMBIAR EL ESTILO DE LOS TEXTOS */
+
+.estiloExtraUno {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.estiloExtraDos {
+    @extend .estiloExtraUno;
+    font-size: 50px;
+}

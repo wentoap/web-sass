@@ -1,0 +1,10 @@
+/* MAPS POR SI AGREGO REACCIÓN EN ICONO "ME GUSTA":(CORAZÓN) "EXCELENTE SERVICIO": (ESTRELLA) */
+
+$mapReaccion:(corazon:#b31826, estrella:#f9d503);
+
+@each $reaccion, $color in $mapReaccion {
+    .#{$reaccion} {
+        color: $color;
+    }
+    
+}

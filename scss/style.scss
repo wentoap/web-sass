@@ -1,10 +1,14 @@
+@import "variables";
+@import "titulos";
+@import "maps";
+@import "extend";
+@import "mixin";
+
 * {
     padding: 0;
     margin: 0;
   }
   
-  @import "variables";
-  @import "titulos";
 
   header {
     /*background-color: #754c24;*/
@@ -38,6 +42,8 @@
     font-family: Arial, Helvetica, sans-serif;
     color: #f39200;
     text-align: center;
+    padding: 10px;
+    margin: 20px;
   }
   
   /* BOX MODELLING */
@@ -101,6 +107,11 @@
     color: #f39200;
     font-family: Arial, Helvetica, sans-serif;
   }
+
+  .manteDesayunos {
+    padding: 20px;
+    margin: 10px;
+  }
   
   /* ESTILO ORDEN LLEVAR */
   
@@ -121,6 +132,10 @@
     text-align: center;
   }
   
+  .mapaCiudad {
+    padding: 20px;
+    margin: 10px;
+  }
   /* ESTILO MENÚ DEL DÍA */
   
   .menuSeccion {
@@ -144,7 +159,15 @@
   .promocionMes {
     grid-area: promoLunes;
   }
+
+  /* ESTILO COMIDAS */
+
+  .manteComida {
+    padding: 20px;
+    margin: 10px;
+  }
   
+
   /* MEDIA QUERIES INDEX */
   
   /*  VERSIÓN TABLETA */

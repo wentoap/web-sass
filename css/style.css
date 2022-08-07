@@ -1,8 +1,4 @@
 @charset "UTF-8";
-* {
-  padding: 0;
-  margin: 0; }
-
 .titulo {
   color: #683c11;
   font-family: Arial, Helvetica, sans-serif;
@@ -15,6 +11,32 @@
   display: flex;
   flex-direction: row;
   justify-content: center; }
+
+/* MAPS POR SI AGREGO REACCIÓN EN ICONO "ME GUSTA":(CORAZÓN) "EXCELENTE SERVICIO": (ESTRELLA) */
+.corazon {
+  color: #b31826; }
+
+.estrella {
+  color: #f9d503; }
+
+/* EXTEND POR SI DESEO CAMBIAR EL ESTILO DE LOS TEXTOS */
+.estiloExtraUno, .estiloExtraDos {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-align: center; }
+
+.estiloExtraDos {
+  font-size: 50px; }
+
+/* MIXIN POR SI QUIERO CAMBIAR EL ESTILO DE LOS PARRAFOS */
+.parrafosExtra {
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: left; }
+
+* {
+  padding: 0;
+  margin: 0; }
 
 header {
   /*background-color: #754c24;*/
@@ -41,7 +63,9 @@ header {
 .nosotros {
   font-family: Arial, Helvetica, sans-serif;
   color: #f39200;
-  text-align: center; }
+  text-align: center;
+  padding: 10px;
+  margin: 20px; }
 
 /* BOX MODELLING */
 .contenedorNosotros {
@@ -94,6 +118,10 @@ body {
   color: #f39200;
   font-family: Arial, Helvetica, sans-serif; }
 
+.manteDesayunos {
+  padding: 20px;
+  margin: 10px; }
+
 /* ESTILO ORDEN LLEVAR */
 .contenedorContacto {
   background-color: #fcbe6b;
@@ -109,6 +137,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #f39200;
   text-align: center; }
+
+.mapaCiudad {
+  padding: 20px;
+  margin: 10px; }
 
 /* ESTILO MENÚ DEL DÍA */
 .menuSeccion {
@@ -129,6 +161,11 @@ body {
 
 .promocionMes {
   grid-area: promoLunes; }
+
+/* ESTILO COMIDAS */
+.manteComida {
+  padding: 20px;
+  margin: 10px; }
 
 /* MEDIA QUERIES INDEX */
 /*  VERSIÓN TABLETA */
