@@ -33,15 +33,35 @@
     <h2 class="subtituloMenu">MENÚ</h2>
 
 
-
-<nav class="navegacion">
-     <span><a class="inicioDesayunos" href="pages/desayunos.html">Desayunos</a></span>
-     <span><a class="inicioComida" href="pages/comida.html">Comida</a></span>
-     <span><a class="iniciomenudia" href="pages/menudia.html">Menú del día</a></span>
-     <span><a class="inicioOrden" href="pages/llevar.html">Orden para llevar</a></span>
-     <span><a class="inicioPendulo" href="https://www.pendulo.com" target="_blank">Péndulo</a></span>
-
-
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-success" aria-current="page" href="pages/desayunos.html">Desayunos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-success" aria-current="page" href="pages/comida.html">Comidas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-success" aria-current="page" href="pages/menudia.html">Menú del día</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-success" aria-current="page" href="pages/llevar.html">Orden para llevar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-success" aria-current="page" href="https://www.pendulo.com">Péndulo</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit"><a class="buscador" href="pages/llevar.html">Buscar</a></button>
+      </form>
+    </div>
+  </div>
 </nav>
 </header>
 
@@ -64,6 +84,8 @@
     </p>
 </div>
 </main>
+
+<!-- Carrusel -->
 
 <section class="slide mt-3 container img-fluid d-flex justify-content-center"><a href="./pages/llevar.html">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -92,9 +114,9 @@
 
 
 <footer id="footer">
-    <p>Sitio web creado por WenToap l  Siguénos en Facebook - Instagram - Twitter</p>
-    <!-- <p>Síguenos en Facebook - Instagram - Twitter</p> -->
-    <!-- <strong>Todos los derechos reservados</strong> -->
+    <p>Sitio web creado por WenToap l  Siguénos en <a class="facebook" href="https://www.facebook.com/Cafebreria.el.Pendulo">Facebook</a>
+      <a class="instagram" href="https://www.instagram.com/cafebreriaelpendulo">Instagram</a></p>
+
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

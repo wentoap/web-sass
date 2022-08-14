@@ -33,20 +33,41 @@
 
     <H1 data-aos="fade-down" class="titulo">DESAYUNOS</H1>
     <h2 class="subtituloMenu">MENÚ</h2>
-<nav>
 
-        <span><a class="inicioIndex" href="../index.html">Inicio</a></span>
-        <span><a class="inicioComida" href="../pages/comida.html">Comida</a></span>
-        <span><a class="iniciomenudia" href="../pages/menudia.html">Menú del día</a></span>
-        <span><a class="inicioOrden" href="../pages/llevar.html">Orden para llevar</a></span>
-        <span><a class="inicioPendulo" href="https://www.pendulo.com" target="_blank">Péndulo</a></span>
-       
-</nav>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-success" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-success" aria-current="page" href="../pages/comida.html">Comidas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-success" aria-current="page" href="../pages/menudia.html">Menú del día</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-success" aria-current="page" href="../pages/llevar.html">Orden para llevar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-success" aria-current="page" href="https://www.pendulo.com">Péndulo</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><a class="buscador" href="../pages/llevar.html">Buscar</a></button>
+        </form>
+      </div>
+    </div>
 </header>
 
 <!-- FIXED -->
 <div>
-    <strong><a class="cajaUno" href="pages/llevar.html">Ordena para llevar a casa</a></strong>
+    <strong><a class="cajaUno" href="../pages/llevar.html">Ordena para llevar a casa</a></strong>
 </div>
 
 <!-- Aquí va la img de la manteleta correspondiente a los desayunos -->
@@ -56,9 +77,8 @@
 </section>
 
 <footer id="footer">
-    <p>Sitio web creado por WenToap l  Siguénos en Facebook - Instagram - Twitter</p>
-    <!-- <p>Síguenos en Facebook - Instagram - Twitter</p> -->
-    <!-- <strong>Todos los derechos reservados</strong> -->
+    <p>Sitio web creado por WenToap l  Siguénos en <a class="facebook" href="https://www.facebook.com/Cafebreria.el.Pendulo">Facebook</a>
+      <a class="instagram" href="https://www.instagram.com/cafebreriaelpendulo">Instagram</a></p>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>

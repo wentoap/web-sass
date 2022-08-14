@@ -48,17 +48,12 @@ header {
   height: 100px; }
 
 /* NAVEGACIÓN */
-.inicioIndex, .inicioDesayunos, .inicioComida, .iniciomenudia, .inicioOrden, .inicioPendulo, .inicioFooter {
-  color: #f39200;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #683c11;
-  width: 10px;
-  height: 10%;
-  padding: 10px;
-  margin: 10px 10px 1;
-  border-radius: 10px; }
-  .inicioIndex:hover, .inicioDesayunos:hover, .inicioComida:hover, .iniciomenudia:hover, .inicioOrden:hover, .inicioPendulo:hover, .inicioFooter:hover {
-    background-color: #662612; }
+.text-success:hover {
+  background-color: #f39200;
+  border-radius: 3px; }
+
+.buscador {
+  text-decoration: none; }
 
 .nosotros {
   font-family: Arial, Helvetica, sans-serif;
@@ -80,7 +75,8 @@ header {
 
 .slide {
   width: 580px;
-  height: 248px; }
+  height: 248px;
+  margin: 0px 0px 70px 0px; }
 
 /* FIXED */
 .cajaUno {
@@ -94,7 +90,8 @@ header {
   padding: 20px 20px 20px 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: #683c11;
-  border-radius: 0px 0px 10px 10px; }
+  border-radius: 0px 0px 10px 10px;
+  text-decoration: none; }
   .cajaUno:hover {
     background: linear-gradient(#5bbdff, #5b83ff); }
 
@@ -110,6 +107,18 @@ footer {
   padding: 10px;
   grid-area: footer; }
 
+.facebook {
+  text-decoration: none;
+  color: #683c11;
+  font-weight: bold; }
+
+.instagram {
+  text-decoration: none;
+  color: #683c11;
+  font-weight: bold; }
+  .instagram:hover {
+    color: magenta; }
+
 body {
   background-image: url("../img/fondo.jpg"); }
 
@@ -120,18 +129,15 @@ body {
 
 .manteDesayunos {
   padding: 20px;
-  margin: 10px; }
+  margin: 10px;
+  margin: 0px 0px 100px 0px; }
 
 /* ESTILO ORDEN LLEVAR */
 .contenedorContacto {
-  background-color: #fcbe6b;
-  padding: 20px;
-  margin: 50px;
-  width: 600px;
-  height: 320px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #683c11;
-  border-radius: 10px; }
+  width: 500px;
+  height: 300px;
+  padding: 30px;
+  margin: 50px; }
 
 .zonaMexico {
   font-family: Arial, Helvetica, sans-serif;
@@ -140,7 +146,7 @@ body {
 
 .mapaCiudad {
   padding: 20px;
-  margin: 10px; }
+  margin: 200px 0px 100px 0px; }
 
 /* ESTILO MENÚ DEL DÍA */
 .menuSeccion {
@@ -148,16 +154,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center; }
 
-.contenedorMenuLunes {
-  background-color: #79211c;
-  background: linear-gradient(#79211c, #6a211c);
-  padding: 20px;
-  margin: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  color: #f39200;
-  border-radius: 10px;
-  grid-area: lunes; }
+.slide {
+  width: 500px;
+  height: 1132px;
+  margin: 0px 0px 70px 0px; }
 
 .promocionMes {
   grid-area: promoLunes; }
@@ -165,7 +165,8 @@ body {
 /* ESTILO COMIDAS */
 .manteComida {
   padding: 20px;
-  margin: 10px; }
+  margin: 10px;
+  margin: 0px 0px 100px 0px; }
 
 /* MEDIA QUERIES INDEX */
 /*  VERSIÓN TABLETA */

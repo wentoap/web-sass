@@ -23,21 +23,17 @@
   
   /* NAVEGACIÓN */
   
-  .inicioIndex, .inicioDesayunos, .inicioComida, .iniciomenudia, .inicioOrden, .inicioPendulo, .inicioFooter {
-    color: #f39200;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #683c11;
-    width: 10px;
-    height: 10%;
-    padding: 10px;
-    margin: 10px 10px 1;
-    border-radius: 10px;
-  
+  .text-success {
     &:hover {
-      background-color: #662612;
+      background-color: #f39200;
+      border-radius: 3px;
     }
   }
-  
+
+  .buscador {
+    text-decoration: none;
+  }
+
   .nosotros {
     font-family: Arial, Helvetica, sans-serif;
     color: #f39200;
@@ -62,6 +58,7 @@
   .slide {
     width: 580px;
     height: 248px;
+    margin: 0px 0px 70px 0px;
   }
   
   /* FIXED */
@@ -78,6 +75,7 @@
     font-family: Arial, Helvetica, sans-serif;
     color: #683c11;
     border-radius: 0px 0px 10px 10px;
+    text-decoration: none;
   
     &:hover {
       background: linear-gradient(#5bbdff, #5b83ff);
@@ -97,6 +95,21 @@
     grid-area: footer;
   }
   
+  .facebook {
+    text-decoration: none;
+    color: #683c11;
+    font-weight: bold;
+  }
+
+  .instagram {
+    text-decoration: none;
+    color: #683c11;
+    font-weight: bold;
+    &:hover {
+    color: magenta;
+    }
+  }
+
   body {
     background-image: url("../img/fondo.jpg");
   }
@@ -111,21 +124,18 @@
   .manteDesayunos {
     padding: 20px;
     margin: 10px;
+    margin: 0px 0px 100px 0px;
   }
   
   /* ESTILO ORDEN LLEVAR */
   
   .contenedorContacto {
-    background-color: #fcbe6b;
-    padding: 20px;
+    width: 500px;
+    height: 300px;
+    padding: 30px;
     margin: 50px;
-    width: 600px;
-    height: 320px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #683c11;
-    border-radius: 10px;
   }
-  
+
   .zonaMexico {
     font-family: Arial, Helvetica, sans-serif;
     color: #f39200;
@@ -134,7 +144,7 @@
   
   .mapaCiudad {
     padding: 20px;
-    margin: 10px;
+    margin: 200px 0px 100px 0px;
   }
   /* ESTILO MENÚ DEL DÍA */
   
@@ -144,16 +154,10 @@
     text-align: center;
   }
   
-  .contenedorMenuLunes {
-    background-color: #79211c;
-    background: linear-gradient(#79211c, #6a211c);
-    padding: 20px;
-    margin: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    color: #f39200;
-    border-radius: 10px;
-    grid-area: lunes;
+  .slide {
+    width: 500px;
+    height: 1132px;
+    margin: 0px 0px 70px 0px;
   }
   
   .promocionMes {
@@ -165,6 +169,7 @@
   .manteComida {
     padding: 20px;
     margin: 10px;
+    margin: 0px 0px 100px 0px;
   }
   
 

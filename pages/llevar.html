@@ -30,62 +30,86 @@
 
     <img class="logoEmpresa" src="../img/logo-favicon.jpg" alt="Logo Empresa">
 
-    <H1 data-aos="fade-down" class="titulo">ORDEN PARA LLEVAR</H1>
+    <H1 data-aos="fade-down d-flex" class="titulo">ORDEN PARA LLEVAR</H1>
 
-    <h2 class="subtituloMenu">MENÚ</h2>
+    <h2 class="subtituloMenu d-flex">COBERTURA CIUDAD DE MÉXICO</h2>
 
-<nav>
-    
-        <span><a class="inicioDesayunos" href="../pages/desayunos.html">Desayunos</a></span>
-        <span><a class="inicioComida" href="../pages/comida.html">Comida</a></span>
-        <span><a class="iniciomenudia" href="../pages/menudia.html">Menú del día</a></span>
-        <span><a class="inicioIndex" href="../index.html">Inicio</a></span>
-        <span><a class="inicioPendulo" href="https://www.pendulo.com" target="_blank">Péndulo</a></span>
-       
-</nav>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-success" aria-current="page" href="../pages/desayunos.html">Desayunos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-success" aria-current="page" href="../pages/comida.html">Comidas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-success" aria-current="page" href="../pages/menudia.html">Menú del día</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-success" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-success" aria-current="page" href="https://www.pendulo.com">Péndulo</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><a class="buscador" href="../pages/llevar.html">Buscar</a></button>
+        </form>
+      </div>
+    </div>
 </header>
 
 <!-- FIXED -->
 <div>
-    <strong><a class="cajaUno" href="pages/llevar.html">Ordena para llevar a casa</a></strong>
+    <strong><a class="cajaUno" href="../pages/llevar.html">Ordena para llevar a casa</a></strong>
 </div>
 
 
 
 <!-- Aquí un formulario de contacto -->
-<main>
-    <form class="contenedorContacto">
-        <fieldset>
-            <legend>Contáctanos para llevar tu comida hasta donde estes</legend>
-            <p>Telefono 55 5445 6969</p>
-            <p>Dirección Colonia Roma, CDMX, México</p>
-            <label for="nombre">Nombre</label>
-            <input id="nombre" type="text">
-            <br>
-            <label for="apellido">Apellido</label>
-            <input id="apellido" type="text">
-            <br>
-            <label for="correoe">Correo electrónico</label>
-            <input type="email">
-            <br>
-            <input type="submit">
-            <input type="reset">
-        </fieldset>
-    </form>
+
     
+    <form class="contenedorContacto">
+        <div class="mb-3">
+            <div id="emailHelp" class="form-text">
+                <p>¡Contáctanos para llevar tu comida hasta donde estés!</p>
+                <p>Telefono 55 5445 6969</p>
+                <p>Dirección Colonia Roma, CDMX, México</p>
+            </div>
+          <label for="exampleInputEmail1" class="form-label text-success">Usuario</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Nombre y Apellido</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label text-success">Correo Electrónico</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label text-success">Descripción de Pedido</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1 text-success">Enviar</label>
+        </div>
+        <button type="submit" class="btn btn-success">Borrar</button>
+      </form>
 
 <!-- Aquí un mapa de navegación de la zona donde se puede llevar comida parallevar -->
 <main>
-    <h2 class="zonaMexico">SÓLO DISPONIBLE EN CIUDAD DE MÉXICO</h2>
-    <h3 class="subtituloMenu">Esta es la zona en donde tenemos cobertura de comida para llevar.</h3>
-    <iframe class="mapaCiudad" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240864.16417188133!2d-99.2836969296035!3d19.39067996918926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2sCiudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1656107206481!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe class="mapaCiudad d-flex" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240864.16417188133!2d-99.2836969296035!3d19.39067996918926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2sCiudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1656107206481!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </main>
 
 
 <footer id="footer">
-    <p>Sitio web creado por WenToap l  Siguénos en Facebook - Instagram - Twitter</p>
-    <!-- <p>Síguenos en Facebook - Instagram - Twitter</p> -->
-    <!-- <strong>Todos los derechos reservados</strong> -->
+    <p>Sitio web creado por WenToap l  Siguénos en <a class="facebook" href="https://www.facebook.com/Cafebreria.el.Pendulo">Facebook</a>
+      <a class="instagram" href="https://www.instagram.com/cafebreriaelpendulo">Instagram</a></p>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>

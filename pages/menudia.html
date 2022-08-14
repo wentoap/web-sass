@@ -33,62 +33,77 @@
    
     <h2 class="subtituloMenu">MENÚ</h2>
 
-<nav>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-success" aria-current="page" href="../pages/desayunos.html">Desayunos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-success" aria-current="page" href="../pages/comida.html">Comidas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-success" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-success" aria-current="page" href="../pages/llevar.html">Orden para llevar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-success" aria-current="page" href="https://www.pendulo.com">Péndulo</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><a class="buscador" href="../pages/llevar.html">Buscar</a></button>
+        </form>
+      </div>
+    </div>
 
-        <span><a class="inicioDesayunos" href="../pages/desayunos.html">Desayunos</a></span>
-        <span><a class="inicioComida" href="../pages/comida.html">Comida</a></span>
-        <span><a class="inicioIndex" href="../index.html">Inicio</a></span>
-        <span><a class="inicioOrden"href="../pages/llevar.html">Orden para llevar</a></span>
-        <span><a class="inicioPendulo" href="https://www.pendulo.com" target="_blank">Péndulo</a></span>
-       
-</nav>
 </header>
 
 <!-- FIXED -->
 <div>
-    <strong><a class="cajaUno" href="pages/llevar.html">Ordena para llevar a casa</a></strong>
+    <strong><a class="cajaUno" href="../pages/llevar.html">Ordena para llevar a casa</a></strong>
 </div>
+ 
 
 <main>
-    <!-- Estos me gustaría que cambiaran por día de la semana ( colores y menús ). Espero conforme avance el curso aprenda a proframar para que cambie esta seccion. -->
+    <!-- CARRUSEL MENÚS -->
 
-    <div class="contenedorMenuLunes">
-    <h2 class="menuSeccion">Menú Lunes</h2>
-    <p>Un menú diferente cada día por $175 MXN</p>
-    <br>
-    <h2>Primer tiempo</h2>
-<br>
-    <p>
-        CREMA DE CHICHARRÓN 355 ml
-        <li>Servido con juliana de tortilla.</li>
-    </p>
-<br>
-    <p>
-        ENSALADA CON TACOS DE SURIMI KENJI 210 g
-        <li>Tacos de surimi y jitomate en tortilla de harina frita, servidos sobre una cama de lechuga con aderezo Aurora.</li>
-    </p>
-<br>
-    <h2>Plato fuerte</h2>
-<br>
-    <p>
-        POLLO PONIATOWSKA 150 g
-        <li>Pechuga de pollo cocida a la plancha, rellena de jitomate, queso panela y bañada con salsa verde.</li>
-    </p>
 
-    <p>
-        AGUA DEL DÍA 500 ml 
-        <li>Postre o café</li>
-        <li>+70 con Vaso de Vino 240 ml</li>
-    </p>
-</div>
-
-</main>
+<section class="slideMenu mt-3 container img-fluid d-flex justify-content-center"><a href="./pages/llevar.html">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/menu1.jpg" class="d-block w-100" alt="menu1">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/menu2.jpg" class="d-block w-100" alt="menu2">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/menu3.jpg" class="d-block w-100" alt="menu3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </a>
+</section>
 
 
 <footer id="footer">
-    <p>Sitio web creado por WenToap l  Siguénos en Facebook - Instagram - Twitter</p>
-    <!-- <p>Síguenos en Facebook - Instagram - Twitter</p> -->
-    <!-- <strong>Todos los derechos reservados</strong> -->
+    <p>Sitio web creado por WenToap l  Siguénos en <a class="facebook" href="https://www.facebook.com/Cafebreria.el.Pendulo">Facebook</a>
+      <a class="instagram" href="https://www.instagram.com/cafebreriaelpendulo">Instagram</a></p>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
