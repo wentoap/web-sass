@@ -55,6 +55,10 @@ header {
 .buscador {
   text-decoration: none; }
 
+.titulo {
+  padding: 10px;
+  margin: 20px; }
+
 .nosotros {
   font-family: Arial, Helvetica, sans-serif;
   color: #f39200;
@@ -128,9 +132,9 @@ body {
   font-family: Arial, Helvetica, sans-serif; }
 
 .manteDesayunos {
-  padding: 20px;
+  padding: 15px;
   margin: 10px;
-  margin: 0px 0px 100px 0px; }
+  margin: 0px 0px 50px 0px; }
 
 /* ESTILO ORDEN LLEVAR */
 .contenedorContacto {
@@ -164,32 +168,48 @@ body {
 
 /* ESTILO COMIDAS */
 .manteComida {
-  padding: 20px;
+  padding: 15px;
+  margin: 10px;
+  margin: 0px 0px 50px 0px; }
+
+/* ESTILO PROMOCIONES */
+.promos {
+  padding: 15px;
   margin: 10px;
   margin: 0px 0px 100px 0px; }
 
 /* MEDIA QUERIES INDEX */
 /*  VERSIÓN TABLETA */
+@media (min-width: 300px) {
+  .gridPadre {
+    display: grid;
+    grid-template-areas: "header" "nosotros" "slide" "footer"; } }
+
 @media (min-width: 768px) {
   .gridPadre {
     display: grid;
-    grid-template-areas: "header" "nosotros" "footer"; } }
+    grid-template-areas: "header" "nosotros" "slide" "footer"; } }
 
 /*  VERSIÓN ESCRITORIO */
 @media (min-width: 1024px) {
   .gridPadre {
     display: grid;
-    grid-template-areas: "header" "nosotros" "footer"; } }
+    grid-template-areas: "header" "nosotros" "slide" "footer"; } }
 
-/* MEDIA QUERIES INDEX */
+/* MEDIA QUERIES MENÚ DEL DÍA */
 /*  VERSIÓN TABLETA */
+@media (min-width: 300px) {
+  .padreDia {
+    display: grid;
+    grid-template-areas: "header" "slide" "footer"; } }
+
 @media (min-width: 768px) {
   .padreDia {
     display: grid;
-    grid-template-areas: "header" "lunes" "footer"; } }
+    grid-template-areas: "header" "slide" "footer"; } }
 
 /*  VERSIÓN ESCRITORIO */
 @media (min-width: 1024px) {
-  .gridPadre {
+  .padreDia {
     display: grid;
-    grid-template-areas: "header" "lunes" "footer"; } }
+    grid-template-areas: "header" "slide" "footer"; } }
